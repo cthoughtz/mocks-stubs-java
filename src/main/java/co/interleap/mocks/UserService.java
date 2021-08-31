@@ -9,6 +9,10 @@ public class UserService {
         this.emailService = emailService;
     }
 
+    public void sendWelcomeEmail(String email){
+        emailService.send(new EmailBody("Welcome", "Welcome to the portal", email));
+    }
+
     public void sendRegisteredPhoneNumber(String email){
         try {
             User user = userRepository.findByEmail(email);

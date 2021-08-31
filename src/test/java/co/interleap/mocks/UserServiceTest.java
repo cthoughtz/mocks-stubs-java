@@ -7,6 +7,11 @@ import static org.junit.jupiter.api.Assertions.*;
 class UserServiceTest {
 
     @Test
+    void shouldSendWelcomeEmail() {
+
+    }
+
+    @Test
     void shouldSendRegisteredPhoneNumberIfUserAccountExists() {
 
     }
