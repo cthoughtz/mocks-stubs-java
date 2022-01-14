@@ -1,0 +1,14 @@
+Car Crash Example
+
+When A car company wants to test the impact of a car crash they do not use real humans they use crash test dummys (which
+we can call test doubles). They look like human beings but they are not actually humans. The dummy's have censors that
+give data back to the car manufacture and the car manufacture use that data to justify there claims that there car is
+safe.
+
+The same thing can be done with Test Doubles in code. You duplicate a class etc.... and confirm some that the code is
+doing what it is suppose to do based on the output from the test double which is meant to act like a real class.
+
+Test Double can also be called mocks.
+
+The art of mocking in software testing:
+https://www.methodsandtools.com/archive/archive.php?id=122

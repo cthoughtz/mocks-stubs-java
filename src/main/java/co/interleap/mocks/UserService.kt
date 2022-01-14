@@ -1,13 +1,13 @@
 package co.interleap.mocks
 
-class UserService(private val userRepository: UserRepository, private val emailService: EmailService) {
+class UserService(private val userRepository: UserRepository?, private val emailService: EmailService) {
     fun sendWelcomeEmail(email: String?) {
         emailService.send(EmailBody("Welcome", "Welcome to the portal", email!!))
     }
 
     fun sendRegisteredPhoneNumber(email: String?) {
         try {
-            val user = userRepository.findByEmail(email)
+            val user = userRepository?.findByEmail(email)
             val emailBody = EmailBody(
                 "Account Details",
                 """
